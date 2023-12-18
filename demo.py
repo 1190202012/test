@@ -7,7 +7,7 @@ from utils import Huozi
 def run_cli(generate_kwargs, model):
     history = None
     while True:
-        query = input(">>>> ")
+        query = input(">>>>123123 ")
         if query == "q":
             break
 
@@ -50,7 +50,7 @@ def run_gradio(generate_kwargs, model):
     )
     topp_slider = gr.Slider(
         minimum=0.01,
-        maximum=1.00,
+        maximum=1.02,
         value=generate_kwargs['top_p'],
         step=0.01,
         label="topp",
